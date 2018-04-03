@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>物流查詢</title>
+    <link rel="stylesheet" href="{{static_url ( 'css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{static_url ( 'css/bootstrap.min.css')}}">
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content col-xs-12 col-md-8">
+                <h1>請輸入你要查詢的訂單號：</h1>
+                <form action="/result" class="form_table" method="GET">
+                    <input type="text" class="inp-default inp-search" placeholder="請輸入你要查詢的訂單號" name="code">
+                    <input type="submit" class="btn-default btn-search" value="查詢">
+                    <sapn class="error_span">{{ error }}</sapn>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background: #D0D7E5
+        }
+        
+        .inp-search {
+            padding: 9px 10px;
+            width: 80%;
+            height: 60px;
+            line-height: 38px;
+            font-size: 16px;
+            -webkit-appearance: none;
+            border-radius: 0px;
+            border: 3px solid #170E45;
+            font-size: 22px;
+        }
+        
+        .form_table .inp-search {
+            margin: 2rem 0;
+        }
+        
+        .btn-search {
+            padding: 0;
+            width: 186px;
+            height: 60px;
+            line-height: 54px;
+            font-size: 18px;
+            color: #fff;
+            vertical-align: top;
+            background: #7B9FFE;
+        }
+        
+        .btn-search:hover {
+            background: #6F96FF;
+        }
+        
+        .row h1 {
+            color: #4779FE
+        }
+        
+        .row .content {
+            margin: 10% auto 0;
+            float: none;
+            width: 80%;
+        }
+        
+        .btn-search {
+            display: block
+        }
+        
+        .error_span {
+            color: #E11111;
+            padding: 1rem 0;
+            display: inline-block;
+        }
+        
+        @media (max-width: 600px) {
+            .inp-search {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            .btn-search {
+                width: 110px;
+                height: 50px;
+                line-height: 50px;
+            }
+            .inp-search {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .inp-search {
+                font-size: 16px;
+            }
+            .row h1 {
+                font-size: 22px;
+            }
+            .btn-search {
+                padding: 0;
+                width: 110px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                color: #fff;
+                vertical-align: top;
+                background: #7B9FFE;
+            }
+        }
+    </style>
+</body>
+
+</html>

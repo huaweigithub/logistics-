@@ -1,0 +1,51 @@
+body {
+    background-image: url(../images/big-bg.jpg)
+}
+
+.inp-search {
+    padding: 9px 10px;
+    width: 80%;
+    height: 60px;
+    line-height: 38px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    border: 3px solid #170E45;
+    font-size: 22px;
+}
+
+.form_table .inp-search {
+    margin: 2rem 0;
+}
+
+.btn-search {
+    padding: 0;
+    width: 186px;
+    height: 60px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #fff;
+    vertical-align: top;
+    background: #7B9FFE;
+}
+
+.btn-search:hover {
+    background: #6F96FF;
+}
+
+.row h1 {
+    color: #4779FE
+}
+
+.form_table {
+    padding: 2rem 0;
+}
+
+.row .content {
+    margin: 10% auto 0;
+    float: none;
+}
+
+.btn-search {
+    display: block
+}
